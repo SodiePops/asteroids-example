@@ -8,7 +8,7 @@ const config = {
   entry: 'src/index.ts',
   format: 'iife',
   dest: 'dist/game.js',
-  moduleName: 'smashin',
+  moduleName: 'asteroids-example',
   sourceMap: true,
 
   plugins: [
@@ -16,8 +16,8 @@ const config = {
     resolveNodeModules({ module: true, jsnext: true, main: true }),
     commonjs({
       namedExports: {
-        '../tudi/node_modules/pixi.js/lib/index.js': ['autoDetectRenderer', 'Container', 'Sprite', 'SCALE_MODES'],
-        '../tudi/node_modules/pixi.js/lib/polyfill/Math.sign.js': ['default'],
+        'node_modules/pixi.js/lib/index.js': ['autoDetectRenderer', 'Container', 'Sprite', 'SCALE_MODES'],
+        'node_modules/pixi.js/lib/polyfill/Math.sign.js': ['default'],
       }
     }),
     builtins(),
