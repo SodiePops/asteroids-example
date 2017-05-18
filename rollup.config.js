@@ -7,7 +7,7 @@ import builtinsGlobals from 'rollup-plugin-node-globals'
 const config = {
   entry: 'src/index.ts',
   format: 'iife',
-  dest: 'dist/game.js',
+  dest: 'game.js',
   moduleName: 'asteroids-example',
   sourceMap: true,
 
